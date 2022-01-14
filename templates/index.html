@@ -341,8 +341,8 @@
                         <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Hello, {{user.username}}! </h3>
                         {% endif %}
                         {% if not user.is_authenticated %}
-                        <h3>One can login and report an incident and view saved incidents.</h3>
-                        <h3>Admin can view the forms</h3>
+                        <h3>One can login and report a complaint,</h3>
+                        <h3>Admin can check reported complaints and can resolve them.</h3>
                         {% endif %}
 
                         {% block content %}
