@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=1024">
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
@@ -282,10 +282,11 @@
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Complaints </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                {% if user.is_authenticated %}
                                 <li class="sidebar-item"><a href="{% url 'report' %}"  class="sidebar-link"><span
                                             class="hide-menu">Report a Complaint</span></a>
                                 </li>
-                               
+                                {% endif %}
                                 
                             </ul>
                         </li>

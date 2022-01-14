@@ -4,7 +4,7 @@ from django.db import models
 class Report(models.Model):
     location = models.CharField(max_length=100)
     Incident_Dept = models.CharField(max_length=100)
-    dateandtime = models.DateTimeField()
+    dateandtime = models.DateTimeField(blank=True, null=True, default='')
     incident_location = models.TextField(max_length=500)
     suspected_cause = models.TextField(max_length=500)
     immediate_action_taken = models.TextField(max_length=500)

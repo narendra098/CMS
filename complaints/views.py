@@ -1,11 +1,11 @@
-from django.http import HttpResponseRedirect
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from django.contrib import messages
 
 from .models import Report
 
 def report(request):
     return render(request,'report.html')
+
 def post(request):
     if request.method=='POST':
         location = request.POST.get('location')
